@@ -1,0 +1,95 @@
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="../SiteAssets/stdud_classicWebPart/script.js"></script>
+<script src="../SiteAssets/stdud_classicWebPart/showData.js"></script>
+<script src="../SiteAssets/stdud_classicWebPart/formToJson.js"></script>
+<!-- <script src="/sites/ mySiteCollection /_catalogs/masterpage/sk-sk/js/bootstrap.min.js"></script> -->
+<!-- <SharePoint:CssRegistration name="<% $SPUrl:~sitecollection/_catalogs/masterpage/SB.Learning.Master/css/bootstrap-datetimepicker.min.css%>" After="corev15.css" runat="server" /> -->
+
+<!-- <link
+  rel="stylesheet"
+  type="text/css"
+  href="../SiteAssets/departments-sandbox/style-debug.css" 
+/> -->
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="../SiteAssets/stdud_classicWebPart/style.css"
+/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<main class="main">
+    <div class="wrapper">
+        <!-- display cars -->
+        <div class="wrapper-cars">
+            <span>Avalible cars:</span>
+            <div id="carsRoot"></div>
+        </div>
+
+        <div class="wrapper-orders">
+            <!-- display orders -->
+            <div class="wrapper-orders-display">
+                <div id="ordersRoot"></div>
+            </div> 
+
+            <!-- add orders -->
+            <div class="wrapper-orders-add">
+                <h2>Add an order</h2>
+
+                <hr>
+
+                <myForm id="reg-form" action="">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title" placeholder="title"><br>
+
+                    <br>
+
+                    <label for="additionalInfo">Additioanl info</label>
+                    <textarea name="additionalInfo" id="additionalInfo" placeholder="AdditionalInfo..." ></textarea><br>
+
+                    <br>
+
+                    <label for="car">Select car</label>
+                    <select name="car" id="car">
+                        <option value="student">Student</option>
+                        <option value="working">Working</option>
+                        <option value="housewife">Housewife</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="carDamaged">Car damaged?</label>
+                    <input type="checkbox" name="carDamaged" id="carDamaged">
+
+                    <br><br>
+
+                    <label for="car">Drive rate</label>
+                    <select name="car" id="car">
+                        <option value="oneStar">one Stars</option>
+                        <option value="twoStars">two Stars</option>
+                        <option value="threeStars">three Stars</option>
+                        <option value="fourStars">four Stars</option>
+                        <option value="fiveStars">five Stars</option>
+                    </select>
+
+                    <br><br>
+
+                    <input type="submit" value="Send" id="sendButton">
+                </myForm>
+
+                <hr>
+
+                <!-- <div id="json-container">
+                    <h3>Your information:</h3>
+
+                    <div id="json">
+
+                    </div>
+
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+</main>

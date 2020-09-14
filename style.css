@@ -1,0 +1,29 @@
+main {
+    /* margin: 10px; */
+    /* padding: 10px; */
+    box-sizing: border-box;
+}
+
+
+.wrapper-cars, .wrapper-orders-display, .wrapper-orders-add{
+    /* background: grey; */
+    border-radius: 15px;
+    padding: 15px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+th {
+    padding: 8px 10px;
+}
+td {
+    padding: 6px 8px;
+}
